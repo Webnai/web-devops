@@ -3,12 +3,60 @@
   <head>
     <title>more nested layouts</title>
     <style>
+      p {
+        font-family: 'Arial';
+      }
+      .container {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        width: 270px;
+        height: 150;
+      }
       .picture {
         display: inline-block;
-        width: 100px;
+        margin-left: 5px;
+        margin-right: 1px;
+        margin-top: 4px;
       }
       .cat {
-        width: 80px;
+        width: 50px;
+        height: 50px;
+        border-radius: 40px;
+      }
+      .description {
+        display: inline-block;
+        margin-left: 0;
+      }
+      .name {
+        margin-top: 8px;
+        margin-bottom: 1px;
+        font-weight: bold;
+      }
+      .type {
+        margin-top: 1px;
+        margin-bottom: 0;
+        color: gray;
+      }
+      .more {
+        margin-top: 1px;
+        margin-bottom: 2px;
+        color: gray;
+        font-size: 13px;
+      }
+      .follow {
+        display: inline-block;
+        margin-left: 64px;
+        vertical-align: top;
+      }
+      .follow-btn {
+        background-color: rgb(47, 129, 247);
+        color: white;
+        border-radius: 3px;
+        border: none;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
     </style>
   </head>
@@ -18,9 +66,9 @@
         <img class="cat" src="thumbnails/cat.jpg" >
       </div>
       <div class="description">
-        <p>Wilbur</p>
-        <p>The cat</p>
-        <p>Popular</p>
+        <p class="name">Wilbur</p>
+        <p class="type">The cat</p>
+        <p class="more">Popular</p>
       </div>
       <div class="follow">
         <button class="follow-btn">Follow</button>
