@@ -3,24 +3,51 @@
   <head>
     <title>display grid</title>
     <style>
+      p {
+        font-family: 'Arial';
+      }
       .grid {
         display: grid;
         grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+      }
+      .profile {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       }
       .profile-picture {
         width: 100%;
         height: 250px;
         object-fit: cover;
       }
+      .name {
+        font-weight: bold;
+        margin-left: 10px;
+      }
       .mutual-grid {
         display: grid;
         grid-template-columns: 50px 1fr;
       }
+      .mutual {
+        color: gray;
+        margin-top: 0px;
+      }
       .sub-pic {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         object-fit: cover;
         border-radius: 40px;
+        margin-left: 10px;
+      }
+      .add-btn {
+        width: 120px;
+        height: 30px;
+        background-color: rgb(47, 129, 247);;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
       }
 
     </style>
@@ -29,30 +56,49 @@
     <div class="grid">
       <div class="profile">
         <img  class="profile-picture" src="thumbnails/bird.jpg">
-        <p>Oliver</p>
+        <p class="name">
+          Oliver
+        </p>
         <div class="mutual-grid">
           <img class="sub-pic" src="channel-pictures/channel-2.jpeg">
-          <p>2 mutual friends</p>
+          <p class="mutual">
+            2 mutual friends
+          </p>
+          <div>
+            <button class="add-btn">Add friend</button>
+          </div>
         </div>
       </div>
       <div class="profile">
         <img  class="profile-picture" src="thumbnails/dog.jpg">
-        <p>Mimi</p>
+        <p class="name">
+          Mimi
+        </p>
         <div class="mutual-grid">
           <img class="sub-pic" src="channel-pictures/channel-1.jpeg">
-          <p>3 mutual friends</p>
+          <p class="mutual">
+            3 mutual friends
+          </p>
+          <div>
+            <button class="add-btn">Add friend</button>
+          </div>
         </div>
 
       </div>
       <div class="profile">
         <img  class="profile-picture" src="thumbnails/cat.jpg">
-        <p>Rex</p>
+        <p class="name">
+          Rex
+        </p>
         <div class="mutual-grid">
           <img class="sub-pic" src="channel-pictures/channel-3.jpeg">
-          <p>4 mutual friends</p>
-
+          <p class="mutual">
+            4 mutual friends
+          </p>
+          <div>
+            <button class="add-btn">Add friend</button>
+          </div>
         </div>
-
       </div>
     </div>
   </body>
