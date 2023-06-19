@@ -12,19 +12,46 @@
         height: 250px;
         object-fit: cover;
       }
+      .mutual-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      }
+      .sub-pic {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 40px;
+      }
+
     </style>
   </head>
   <body>
     <div class="grid">
       <div class="profile">
         <img  class="profile-picture" src="thumbnails/bird.jpg">
+        <p>Oliver</p>
+        <div class="mutual-grid">
+          <img class="sub-pic" src="channel-pictures/channel-2.jpeg">
+          <p>2 mutual friends</p>
+        </div>
       </div>
       <div class="profile">
         <img  class="profile-picture" src="thumbnails/dog.jpg">
+        <p>Mimi</p>
+        <div class="mutual-grid">
+          <img class="sub-pic" src="channel-pictures/channel-1.jpeg">
+          <p>3 mutual friends</p>
+        </div>
 
       </div>
       <div class="profile">
         <img  class="profile-picture" src="thumbnails/cat.jpg">
+        <p>Rex</p>
+        <div class="mutual-grid">
+          <img class="sub-pic" src="channel-pictures/channel-3.jpeg">
+          <p>4 mutual friends</p>
+
+        </div>
 
       </div>
     </div>
