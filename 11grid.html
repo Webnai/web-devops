@@ -3,49 +3,29 @@
   <head>
     <title>display grid</title>
     <style>
-      .image {
-       
+      .grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
       }
-      .sub {
+      .profile-picture {
         width: 100%;
+        height: 250px;
         object-fit: cover;
-        border-radius: 30px;
       }
     </style>
   </head>
-  <body>  
-    <div style="display: grid;
-    grid-template-columns: 400px 400px 400pxr;">
-      <div>
-        <img class="image" src="thumbnails/cat.jpg">
-        <img class="image" src="thumbnails/dog.jpg">
-        <img class="image" src="thumbnails/bird.jpg">
+  <body>
+    <div class="grid">
+      <div class="profile">
+        <img  class="profile-picture" src="thumbnails/bird.jpg">
       </div>
+      <div class="profile">
+        <img  class="profile-picture" src="thumbnails/dog.jpg">
 
-
-        <p>Oliver</p>
-        <div style="display: grid;
-        grid-template-columns: 20px 1fr;">
-        <img class="sub" src="channel-pictures/channel-2.jpeg">
-        <p>2 mutual friends</p>
-        <button class="add-btn">Add friend</button>
-      <div>
-        
-        <p>Oliver</p>
-        <div style="display: grid;
-        grid-template-columns: 20px 1fr;">
-        <img class="sub" src="channel-pictures/channel-3.jpeg">
-        <p>2 mutual friends</p>
-        <button class="add-btn">Add friend</button>
       </div>
-      <div>
-        
-        <p>Oliver</p>
-        <div style="display: grid;
-        grid-template-columns: 20px 1fr;">
-        <img class="sub" src="channel-pictures/channel-4.jpeg">
-        <p>2 mutual friends</p>
-        <button class="add-btn">Add friend</button>
+      <div class="profile">
+        <img  class="profile-picture" src="thumbnails/cat.jpg">
+
       </div>
     </div>
   </body>
