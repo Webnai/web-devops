@@ -1,0 +1,124 @@
+/*--general page style--*/
+body {
+  margin: 0;
+  font-family: 'Arial';
+}
+
+p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+/* --styling search bar-- */ 
+.search-bar {
+  height: 55px;
+  display: flex;
+  background-color: rgb(47, 129, 247);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home {
+  font-weight: bold;
+  color: white;
+  margin-left: 5px;
+}
+
+.search {
+  width: 500px;
+  border-radius: 30px;
+  height: 25px;
+}
+
+.download-btn {
+  background-color: rgb(47, 129, 247);
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 3px;
+  border-width: 2px;
+}
+
+/*--Styling the contents and layout of the page--*/
+.canva {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+
+/*--styling the account profiles--*/
+.account {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.account-picture {
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  object-fit: cover;
+  margin-left: 5px;
+}
+
+.description {
+  width: 150px;
+  margin-left: 15px;
+  margin-top: 0;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.type {
+  color: gray;
+
+}
+
+.fame {
+  color: gray;
+  font-size: 14px;
+}
+
+
+.follow-btn {
+  margin-top: 12px;
+  background-color: rgb(47, 129, 247);
+  color: white;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/*--styling the alert messages--*/
+.message {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.alert-btn {
+  background-color: rgb(47, 129, 247);
+  border: none;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  margin-right: 6px;
+}
