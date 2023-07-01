@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   background-color: white;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -67,14 +68,43 @@
   margin-right: 10px;
 }
 
+.search-btn,
+.voice-search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-btn .tooltip,
+.voice-search-btn .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.voice-search-btn:hover .tooltip {
+  opacity: 1;
+}
+
 .search-icon {
   height: 22px;
-  margin-top: 4px;
 }
 
 .voice-search-icon {
   height: 22px;
-  margin-top: 4px;
   background-color: rgb(248, 248, 248);
 }
 
@@ -104,6 +134,24 @@
 
 .notifications-icon {
   height: 24px;
+}
+
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  border-radius: 10px;
 }
 
 .current-user-picture {
