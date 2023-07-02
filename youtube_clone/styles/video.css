@@ -46,7 +46,6 @@
   position: absolute;
   bottom: 8px;
   right: 5px;
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
   padding-left: 4px;
@@ -88,10 +87,7 @@
   position: absolute;
   background-color: white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.60);
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 4px;
   border-radius: 4px;
   font-size: 15px;
   bottom: -34px;
@@ -115,8 +111,27 @@
 }
 
 .video-grid {
+  font-family: Roboto, Arial;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
