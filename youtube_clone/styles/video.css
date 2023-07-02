@@ -24,6 +24,16 @@
   border-radius: 50px;
 }
 
+.profile-picture-container {
+  display: inline-block;
+}
+
+.sub-picture {
+  width: 50px;
+  border-radius: 50px;
+}
+
+
 .thumbnail-row {
   margin-bottom: 8px;
   position: relative;
@@ -43,6 +53,55 @@
   padding-top: 4px;
   padding-bottom: 4px;
   border-radius: 2px;
+}
+
+.channel-picture {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.channel-stats {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+
+.channel-name {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.subscribers {
+  color: gray;
+}
+
+.profile-info {
+  display: flex;
+}
+
+.channel-picture .profile-info {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.60);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  bottom: -34px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.channel-picture:hover .profile-info {
+  opacity: 1;
 }
 
 .video-author,.video-stats {
