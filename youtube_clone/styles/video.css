@@ -22,6 +22,7 @@
 .profile-picture {
   width: 36px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .profile-picture-container {
