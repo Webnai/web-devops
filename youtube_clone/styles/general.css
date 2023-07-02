@@ -3,6 +3,7 @@ p {
   margin-bottom: 0;
 }
 
+/*The styles below would be inherited */
 body {
   font-family: Roboto, Arial;
   margin: 0;
